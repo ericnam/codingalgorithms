@@ -1,0 +1,20 @@
+{
+  "name": "codingalgorithms",
+  "version": "1.0.0",
+  "description": "Compilation of coding algorithms to be updated on the weekly",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "coding",
+    "algorithm"
+  ],
+  "author": "Eric Nam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mocha": "^5.2.0"
+  }
+}
