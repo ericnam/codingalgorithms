@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
   "keywords": [
     "coding",
@@ -14,6 +16,7 @@
   "author": "Eric Nam",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.5.1",
     "express": "^4.16.3"
   },
   "devDependencies": {
