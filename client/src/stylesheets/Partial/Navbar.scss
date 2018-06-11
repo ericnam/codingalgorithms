@@ -1,0 +1,16 @@
+@import './../Base/Variables.scss';
+
+.navbar {
+    background-color: $primary-color;
+    color: $black;
+    border: none;
+
+    span {
+        line-height: 70px;
+    }
+
+    .header {
+        font-size: large;
+        padding: 25px;
+    }
+}

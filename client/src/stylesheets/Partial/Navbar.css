@@ -1,0 +1,9 @@
+.navbar {
+  background-color: #e3e7ed;
+  color: #1e1e1e;
+  border: none; }
+  .navbar span {
+    line-height: 70px; }
+  .navbar .header {
+    font-size: large;
+    padding: 25px; }
