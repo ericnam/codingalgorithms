@@ -1,7 +1,20 @@
 .navbar {
   background-color: #e3e7ed;
   color: #1e1e1e;
-  border: none; }
+  border: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
   .navbar span {
     line-height: 70px; }
   .navbar .header {
