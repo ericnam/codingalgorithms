@@ -1,32 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4; }
-
-.navbar {
-  background-color: #e3e7ed;
-  color: #1e1e1e;
-  border: none;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */ }
-  .navbar span {
-    line-height: 70px; }
-  .navbar .header {
-    font-size: large;
-    padding: 25px; }
-
 .side-navbar {
   background-color: #e3e7ed;
   float: left;

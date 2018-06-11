@@ -1,0 +1,35 @@
+@import './../Base/Variables.scss';
+
+.side-navbar {
+    background-color: $primary-color;
+    float: left;
+    
+    width: 400px;
+
+    .header {
+        font-weight: bold;
+        line-height: 70px;
+        background-color:$accent-color;
+        color: white;
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                            supported by Chrome and Opera */
+
+        .title {
+            padding: 25px;
+        }
+    }
+
+    nav {
+        padding: 0px 25px;
+
+        a {
+            width: 100%;
+        }
+    }
+}
