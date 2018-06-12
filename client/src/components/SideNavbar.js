@@ -6,15 +6,32 @@ export default class SideNavbar extends Component {
         return (
             <div class="side-navbar">
                 <div class="header">
-                    <span class="title">Coding Algorithms /</span>
+                    <span class="title">Coding Algorithms</span>
                 </div>
 
-                <nav>
-                    <a>Bubble sort</a>
-                    <a>Bubble sort</a>
-                    <a>Bubble sort</a>
-                    <a>Bubble sort</a>
-                </nav>
+                <div class="algo-list">
+
+                    <div class="algo-section">
+                        <span class="title">Algorithms</span>
+                        <nav>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                        </nav>
+                    </div>
+                    
+                    <div class="algo-section">
+                        <span class="title">Algorithms</span>
+                        <nav>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                            <a>Bubble sort</a>
+                        </nav>
+                    </div>
+
+                </div>
             </div>
         );
     }
