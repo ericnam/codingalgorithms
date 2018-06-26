@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Algorithms from './../algorithms/Algorithms';
+
 export default class SideNavbar extends Component {
 
     render() {
@@ -7,6 +9,11 @@ export default class SideNavbar extends Component {
             <div class="side-navbar">
                 <div class="header">
                     <span class="title">Coding Algorithms</span>
+                </div>
+
+                <div>
+                    Algos:
+                    {Algorithms["StringAndArray"]["reverseString"]["title"]}
                 </div>
 
                 <div class="algo-list">
