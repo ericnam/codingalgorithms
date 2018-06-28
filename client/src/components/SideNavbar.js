@@ -4,6 +4,34 @@ import Algorithms from './../algorithms/Algorithms';
 
 export default class SideNavbar extends Component {
 
+    createNav = () => {
+        let nav = [];
+        let algorithms = [];
+        let title;
+        
+        for (var key in Algorithms) {
+            if (Algorithms.hasOwnProperty(key)) {
+                let section = Algorithms[key];
+
+                title = section.title;
+                for (var key2 in section.algorithms) {
+                    if (section.algorithms.hasOwnProperty(key2)) {
+                        algorithms.push(<a>{section.algorithms[key2].title}</a>);
+                    }
+                }
+
+                nav.push(
+                    <div className="algo-section">
+                        <span className="title">{title}</span>
+                        <nav>{algorithms}</nav>
+                    </div>
+                );
+
+            }
+        }
+        return nav;
+    }
+
     render() {
         return (
             <div class="side-navbar">
@@ -11,33 +39,8 @@ export default class SideNavbar extends Component {
                     <span class="title">Coding Algorithms</span>
                 </div>
 
-                <div>
-                    Algos:
-                    {Algorithms["StringAndArray"]["reverseString"]["title"]}
-                </div>
-
                 <div class="algo-list">
-
-                    <div class="algo-section">
-                        <span class="title">Algorithms</span>
-                        <nav>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                        </nav>
-                    </div>
-                    
-                    <div class="algo-section">
-                        <span class="title">Algorithms</span>
-                        <nav>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                            <a>Bubble sort</a>
-                        </nav>
-                    </div>
-
+                    {this.createNav()}
                 </div>
             </div>
         );

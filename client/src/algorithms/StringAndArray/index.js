@@ -1,3 +1,6 @@
 module.exports = {
-    reverseString: require("./reverseString.js")
+    title: "String And Array",
+    algorithms: {
+        reverseString: require("./reverseString.js")
+    }
 };
