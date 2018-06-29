@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
+import SideNavSection from './SideNavSection.js';
 import Algorithms from './../algorithms/Algorithms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class SideNavbar extends Component {
-
     createNav = () => {
         let nav = [];
         let algorithms = [];
@@ -20,18 +20,14 @@ export default class SideNavbar extends Component {
                         algorithms.push(<a>{section.algorithms[key2].title}</a>);
                     }
                 }
-
                 nav.push(
-                    <div className="algo-section">
-                        <span className="title"><FontAwesomeIcon icon="chevron-circle-right"/> {title}</span>
-                        <nav>{algorithms}</nav>
-                    </div>
+                    <SideNavSection title={title} algorithms={algorithms} />
                 );
-
             }
         }
         return nav;
     }
+
 
     render() {
         return (
