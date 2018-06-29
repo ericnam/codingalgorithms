@@ -60,7 +60,6 @@ body {
       .side-navbar .algo-list .algo-section .title:hover {
         background-color: #292929; }
     .side-navbar .algo-list .algo-section nav a {
-      margin: 0 10px 0 0;
       padding: 0 0 0 31px;
       float: left;
       width: 249px;

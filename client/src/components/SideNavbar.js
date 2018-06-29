@@ -5,6 +5,10 @@ import Algorithms from './../algorithms/Algorithms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class SideNavbar extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     createNav = () => {
         let nav = [];
         let algorithms = [];
@@ -17,17 +21,16 @@ export default class SideNavbar extends Component {
                 title = section.title;
                 for (var key2 in section.algorithms) {
                     if (section.algorithms.hasOwnProperty(key2)) {
-                        algorithms.push(<a>{section.algorithms[key2].title}</a>);
+                        algorithms.push(<a>{section.algorithms[key2]["attributes"].title}</a>);
                     }
                 }
                 nav.push(
-                    <SideNavSection title={title} algorithms={algorithms} />
+                    <SideNavSection title={title} algorithms={algorithms}/>
                 );
             }
         }
         return nav;
     }
-
 
     render() {
         return (

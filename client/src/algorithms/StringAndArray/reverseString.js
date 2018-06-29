@@ -7,6 +7,12 @@ let reverseString = (string) => {
 };
 
 module.exports = {
-    title: "Reverse String",
-    method: reverseString
+    method: reverseString,
+    attributes: {
+        title: "Reverse String",
+        input: "string",
+        algorithmic_efficiency: "O(n)",
+        description: `This algorithm should take a string as an input,
+                      and reverse the output.`
+    }
 }
