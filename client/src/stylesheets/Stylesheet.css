@@ -52,18 +52,18 @@ body {
     .side-navbar .algo-list .algo-section .title {
       float: left;
       font-weight: bold;
-      width: 255px;
+      width: 265px;
       color: #f4f4f4;
-      padding: 0 0 0 25px;
+      padding: 0 0 0 15px;
       line-height: 24px;
       background-color: #353535; }
       .side-navbar .algo-list .algo-section .title:hover {
         background-color: #292929; }
     .side-navbar .algo-list .algo-section nav a {
       margin: 0 10px 0 0;
-      padding: 0 0 0 25px;
+      padding: 0 0 0 31px;
       float: left;
-      width: 255px;
+      width: 249px;
       line-height: 24px;
       color: #f4f4f4; }
       .side-navbar .algo-list .algo-section nav a:hover {

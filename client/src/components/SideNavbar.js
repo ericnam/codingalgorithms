@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Algorithms from './../algorithms/Algorithms';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class SideNavbar extends Component {
 
@@ -22,7 +23,7 @@ export default class SideNavbar extends Component {
 
                 nav.push(
                     <div className="algo-section">
-                        <span className="title">{title}</span>
+                        <span className="title"><FontAwesomeIcon icon="chevron-circle-right"/> {title}</span>
                         <nav>{algorithms}</nav>
                     </div>
                 );
@@ -34,12 +35,12 @@ export default class SideNavbar extends Component {
 
     render() {
         return (
-            <div class="side-navbar">
-                <div class="header">
-                    <span class="title">CODING ALGORITHMS</span>
+            <div className="side-navbar">
+                <div className="header">
+                    <span className="title">CODING ALGORITHMS</span>
                 </div>
 
-                <div class="algo-list">
+                <div className="algo-list">
                     {this.createNav()}
                 </div>
             </div>
