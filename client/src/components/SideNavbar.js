@@ -36,7 +36,7 @@ export default class SideNavbar extends Component {
         return (
             <div class="side-navbar">
                 <div class="header">
-                    <span class="title">Coding Algorithms</span>
+                    <span class="title">CODING ALGORITHMS</span>
                 </div>
 
                 <div class="algo-list">

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #f4f4f4;
   color: #424242; }
 
@@ -30,39 +30,41 @@ body {
     padding: 25px; }
 
 .side-navbar {
-  background-color: #e3e7ed;
+  background-color: #424242;
   width: 280px;
-  height: 100vh; }
+  height: 100vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .side-navbar .header {
-    font-weight: bold;
-    line-height: 50px;
+    line-height: 34px;
     width: 280px;
-    background-color: #5590e8;
-    color: #f4f4f4;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
+    background-color: #424242;
+    color: #f4f4f4; }
     .side-navbar .header .title {
-      padding: 25px; }
-  .side-navbar .algo-list {
-    line-height: 25px; }
-    .side-navbar .algo-list .algo-section {
+      padding: 15px; }
+  .side-navbar .algo-list .algo-section {
+    float: left;
+    padding: 0 0 15px; }
+    .side-navbar .algo-list .algo-section .title {
       float: left;
-      padding: 0 0 15px; }
-      .side-navbar .algo-list .algo-section .title {
-        float: left;
-        font-weight: bold;
-        width: 255px;
-        color: #f4f4f4;
-        margin: 0px 0 10px 0;
-        padding: 0 0 0 25px;
-        line-height: 30px;
-        background-color: #3d3d3d; }
-      .side-navbar .algo-list .algo-section nav a {
-        margin: 0 10px 0 0;
-        padding: 0 0 0 25px;
-        float: left;
-        width: 255px; }
+      font-weight: bold;
+      width: 255px;
+      color: #f4f4f4;
+      padding: 0 0 0 25px;
+      line-height: 24px;
+      background-color: #353535; }
+      .side-navbar .algo-list .algo-section .title:hover {
+        background-color: #292929; }
+    .side-navbar .algo-list .algo-section nav a {
+      margin: 0 10px 0 0;
+      padding: 0 0 0 25px;
+      float: left;
+      width: 255px;
+      line-height: 24px;
+      color: #f4f4f4; }
+      .side-navbar .algo-list .algo-section nav a:hover {
+        background-color: #292929; }
